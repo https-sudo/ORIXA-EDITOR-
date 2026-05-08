@@ -1,0 +1,15 @@
+{
+  "name": "ORIXA EDITOR",
+  "short_name": "ORIXA",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
