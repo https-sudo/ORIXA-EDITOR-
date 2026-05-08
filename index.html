@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<script type="module" src="https://cdn.jsdelivr.net/npm/@gradio/lite/dist/lite.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gradio/lite/dist/lite.css" />
+	</head>
+	<body>
+		<gradio-lite>
+		import gradio as gr
+        # Your ORIXA code goes here
+        with gr.Blocks() as demo:
+            gr.Markdown("# 🏺 ORIXA EDITOR")
+            img = gr.ImageMask(label="Upload Subject")
+            prompt = gr.Textbox(label="Transformation")
+            out = gr.Image()
+        demo.launch()
+		</gradio-lite>
+	</body>
+</html>
