@@ -5,8 +5,10 @@ from PIL import Image
 
 # --- CONFIGURATION ---
 API_URL = "https://api-inference.huggingface.co/models/runwayml/stable-diffusion-v1-5"
-# Replace 'your_token_here' with your actual Hugging Face API Token
-HEADERS = {"Authorization": "Bearer your_token_here"}
+import os
+# This looks for a secret key named "HF_TOKEN" instead of showing the text
+token = os.getenv("HF_TOKEN")
+HEADERS = {"Authorization": f"Bearer {token}"}
 
 def orixa_cloud_edit(base_img, ref_img, prompt):
     # Combine the prompt with context from the images
